@@ -133,7 +133,15 @@ NSString *dumpNamesValues(NSArray *kvsN, NSArray *kvsV) {
     int             count = [kvsN count];
 
     for (int i = 0; i < count; i++) {
-        NSString *output = [NSString stringWithFormat:@"%s:%lf\n", [kvsN[i] UTF8String], [kvsV[i] doubleValue]];
+        NSString *name = kvsN[i];
+        double   value = [kvsV[i] doubleValue];
+
+        // Some HID thermal sensors (e.g., tdev) use sp78 format and need conversion
+        if ([name containsString:@"tdev"]) {
+            value = value / 256.0;
+        }
+
+        NSString *output = [NSString stringWithFormat:@"%s:%lf\n", [name UTF8String], value];
         [valueString appendString:output];
     }
 

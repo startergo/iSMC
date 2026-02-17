@@ -250,6 +250,8 @@ var AppleTemp = []SensorStat{
 	{Key: "Tp2h", Desc: "Power Supply T2 Secondary Heatsink Raw"},
 	{Key: "Ts1P", Desc: "Actuator"},
 	{Key: "Ts1S", Desc: "Synthetic Top Skin"},
+	{Key: "TaLT", Desc: "Thunderbolt Left Proximity"},
+	{Key: "TaRT", Desc: "Thunderbolt Right Proximity"},
 	{Key: "TTLD", Desc: "Thunderbolt Left"},
 	{Key: "TTRD", Desc: "Thunderbolt Right"},
 }
