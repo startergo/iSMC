@@ -250,12 +250,11 @@ var AppleTemp = []SensorStat{
 	{Key: "Tp2h", Desc: "Power Supply T2 Secondary Heatsink Raw"},
 	{Key: "Ts1P", Desc: "Actuator"},
 	{Key: "Ts1S", Desc: "Synthetic Top Skin"},
-	{Key: "TaLT", Desc: "Thunderbolt Left Proximity"},
-	{Key: "TaRT", Desc: "Thunderbolt Right Proximity"},
 	{Key: "TTLD", Desc: "Thunderbolt Left"},
 	{Key: "TTRD", Desc: "Thunderbolt Right"},
+	{Key: "TaLT", Desc: "Thunderbolt Left Proximity"},
+	{Key: "TaRT", Desc: "Thunderbolt Right Proximity"},
 }
-
 var AppleFans = []SensorStat{
 	{Key: "F%dAc", Desc: "Fan %d Current Speed"},
 	{Key: "F%dMn", Desc: "Fan %d Minimal Speed"},
@@ -263,7 +262,6 @@ var AppleFans = []SensorStat{
 	{Key: "F%dSf", Desc: "Fan %d Safe Speed"},
 	{Key: "F%dTg", Desc: "Fan %d Target Speed"},
 }
-
 var ApplePower = []SensorStat{
 	{Key: "PC%C", Desc: "CPU Core %"},
 	{Key: "PCAM", Desc: "CPU Core (IMON)"},
@@ -395,7 +393,6 @@ var ApplePower = []SensorStat{
 	{Key: "PU1R", Desc: "Thunderbolt Left"},
 	{Key: "PU2R", Desc: "Thunderbolt Right"},
 }
-
 var AppleVoltage = []SensorStat{
 	{Key: "VCAC", Desc: "CPU IA"},
 	{Key: "VCSC", Desc: "CPU System Agent"},
@@ -455,7 +452,6 @@ var AppleVoltage = []SensorStat{
 	{Key: "VZHD", Desc: "SSD"},
 	{Key: "VZOD", Desc: "ODD"},
 }
-
 var AppleCurrent = []SensorStat{
 	{Key: "IC0C", Desc: "CPU Core"},
 	{Key: "IC1C", Desc: "CPU VccIO"},
